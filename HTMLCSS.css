@@ -1,0 +1,159 @@
+html {
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(to bottom ,rgb(76, 10, 83), rgb(183, 87, 192),rgb(76, 10, 83) );
+} /* HTML */
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(to top , rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.308), rgba(41, 78, 104, 0.199),rgba(171, 220, 243, 0) );
+} /* Body */
+
+#AlphabetA {
+    border: 20px solid black;
+} /* ID A */
+
+#AlphabetZ {
+    border: 20px solid black;
+} /* ID Z */
+
+.MainTitleBG {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Andromeda_Galaxy_560mm_FL.jpg');
+    background-position: center;
+    background-size: 50%;
+    height:25%;
+    text-align: center;
+} /* Main Title Background */
+
+.MainTitleText {
+    margin: auto;
+    color: white;
+    position: relative;
+    top: 20;
+    font-size:7em;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 1) );
+    display: inline-block;
+} /* Main Title Text */
+
+.SecondaryTT{
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+    font-size: 30px;
+    color: white;
+    border: 3px solid;
+    border-color: rgb(255, 251, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-image:linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+} /* Secondary Title Text */
+
+.TitleText {
+    font-size:80px;
+    text-align: center;
+    font-family: cursive;
+} /* Alphabet Title */
+
+.TitleBG {
+    background-image: linear-gradient(to right,rgba(75, 156, 223, 0),rgba(75, 156, 223, 0.8),rgb(245, 152, 248),rgb(75, 156, 223, 0.8),rgba(75, 156, 223, 0) );
+} /* Background for Alphabet Title */
+
+.AlphabetIcon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 10;
+} /* Icon/GIf Alphabet Size */
+
+.AlphabetBG {
+    background-image:linear-gradient(to right, rgba(236, 71, 71, 0),rgba(236, 71, 71, 0.25),rgba(207, 70, 70, 0.644),rgba(236, 71, 71, 0.25),rgba(236, 71, 71, 0) );
+    height: 230px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    bottom: 30px;
+} /* Background for Alphabet Frame */
+
+.AdjustImg  { 
+    height: inherit;
+    margin: auto;
+} /* Secondary Margin Adjustment for Alphabet Frame */
+
+.AlphabetIMGSize {
+    height: 200px;
+    width: 200px;
+    border: 5px solid;
+    border-color: rgb(0, 0, 0);
+} /* Resize On Alphabet Img  */
+
+.AlphabetBG img:hover{
+    border: 5px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 20%;
+} /* Highlight Img */
+
+.BGSnow {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+} /* Snow BG */
+
+.ParagraphSet {
+    text-align: center;
+    font-size: 2em;
+    width: 50%;
+    padding: 20px;
+    color: aliceblue;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} /* Paragraph Setting */
+
+.EndBG {
+    position: relative;
+    background-image: url('https://tinyurl.com/yc5edbpw');
+    background-position: center;
+    background-size: cover;
+    height: 30%;
+    position: relative;
+} /* End Background */
+
+.EndText {
+    background-color: black;
+    padding: 5px;
+    border: 3px solid red;
+    position: absolute;
+    bottom: -10;
+    color: white;
+    font-size:2em;
+}
+
+.SideFX {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    z-index: 10;
+    width: 250px;
+    height: auto;
+} /* Side Effect*/
+
+.SideFX2 {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    z-index: 10;
+    width: 250px;
+    height: auto;
+} /* Side Effect*/
+
+.ADs img:hover {
+    z-index: 11;
+    width: 300px;
+    height: auto;
+}
+
+.AudioShrek {
+    position: fixed;
+    z-index: 100;
+    bottom: 5%;
+}
