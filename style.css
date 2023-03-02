@@ -9,6 +9,11 @@
     --Decoration-2:#A1CFD3;
 }
 
+@media (-webkit-device-pixel-ratio: 1.25) {
+:root {
+zoom: 0.8;
+}}
+
 @font-face {
     font-family: 'Built-Titling-LT';
     src: url(Font/built\ titling\ lt.ttf);
