@@ -850,7 +850,6 @@ h8{
 
 @media screen and (max-width: 1600px) { 
     .invite-all{
-        left: 0.8%;
         zoom: 68%;
     }
 } /* Need more testing on resolution */
