@@ -1,5 +1,3 @@
-document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio));
-
 window.onload = function() {
   document.getElementById("topLeft").focus(); //focus fixing div moving
   document.getElementById("main-click").click();
