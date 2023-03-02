@@ -40,12 +40,6 @@
     min-width: 1366px;
 }
 
-@media (-webkit-device-pixel-ratio: 1.25) {
-    .all-content{
-      zoom: 0.8;
-    }
-  }
-
 html{
     scroll-behavior: smooth;
     margin: 0;
