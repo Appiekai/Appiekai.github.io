@@ -38,10 +38,34 @@
     margin: auto;
 }
 
+@media screen and (max-width: 1279px) and (min-width: 280px) { 
+    .all-content{
+        zoom: 22%;
+    }
+} /* Need more testing on resolution */
+
+@media screen and (min-width: 1280px){ 
+    .all-content{
+        zoom: 100%;
+    }
+} /* Need more testing on resolution */
+
 
 .static-content{
     margin: auto;
 }
+
+@media screen and (max-width: 1279px) and (min-width: 280px) { 
+    .static-content{
+        zoom: 20%;
+    }
+} /* Need more testing on resolution */
+
+@media screen and (min-width: 1280px){ 
+    .static-content{
+        zoom: 85%;
+    }
+} /* Need more testing on resolution */
 
 
 #top-left{
