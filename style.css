@@ -50,7 +50,7 @@
     }
 } /* Need more testing on resolution */
 
-@media screen and (min-width: 1920px){ 
+@media screen and (max-width: 1920px){ 
     .all-content{
         zoom: 100%;
     }
@@ -73,7 +73,7 @@
     }
 } /* Need more testing on resolution */
 
-@media screen and (min-width: 1920px){ 
+@media screen and (max-width: 1920px){ 
     .static-content{
         zoom: 100%;
     }
