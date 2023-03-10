@@ -1,16 +1,22 @@
-document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+(1/window.devicePixelRatio));
-
 window.onload = function() {
   document.getElementById("topLeft").focus(); //focus fixing div moving
   document.getElementById("main-click").click();
 }
 
-function main(){
+function main() {
   document.getElementById("main-click").click();
 }
 
-function about(){
+function about() {
   document.getElementById("about-click").click();
+}
+
+function road() {
+  document.getElementById("roadmap-click").click();
+}
+
+function team() {
+  document.getElementById("team-click").click();
 }
 
 function highlightText(element) {

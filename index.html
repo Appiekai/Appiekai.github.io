@@ -9,28 +9,30 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="all-content">
-        <div id="topLeft" tabindex="0"></div>
-        <div id="sidemenu-container">
+    <div class="static-content">
+        <div class="sidemenu-container">
             <div class="sidemenu">
                 <img class="sidemenu-logo" src="Element/Icon/ui_icon_logo_sidemenu.png" alt="SideMenu-Logo">
                 <div class="jumpto-container"><hr style="width: 28%; margin-left: 10px; height: 1px; background-color: black; border: none;"><span class="jumpto">JUMP TO</span><hr style="width: 28%; margin-right: 10px; height: 1px; background-color: black; border: none;"></div>
                 <div class="sidetext-container">
-                    <div class="sidetext"><div onclick="highlightText(this)"><a href="#main-content" class="sidetext-click" id="main-click"><div></div><p class="sidetext-font">MAIN</p></a></div></div>
+                    <div class="sidetext"><div onclick="highlightText(this)"><a href="#main-content" class="sidetext-click" id="main-click"><p class="sidetext-font">MAIN</p></a></div></div>
                     <div class="sidetext"><div onclick="highlightText(this)"><a href="#about-content"  class="sidetext-click" id="about-click"><p class="sidetext-font">ABOUT</p></a></div></div>
-                    <div class="sidetext"><div onclick="highlightText(this)"><a class="sidetext-click"><p class="sidetext-font" id="roadmap-click">ROADMAP</p></a></div></div>
-                    <div class="sidetext"><div onclick="highlightText(this)"><a class="sidetext-click"><p class="sidetext-font" id="team-click">TEAM</p></a></div></div>
+                    <div class="sidetext"><div onclick="highlightText(this)"><a href="#roadmap-content" class="sidetext-click" id="roadmap-click"><p class="sidetext-font">ROADMAP</p></a></div></div>
+                    <div class="sidetext"><div onclick="highlightText(this)"><a href="#team-content" class="sidetext-click" id="team-click"><p class="sidetext-font">TEAM</p></a></div></div>
                 </div>
                 <a href="https://twitter.com/aibaversenft" target="_blank" class="sidetwitter-container"><hr style="width: 90%; height: 1px; background-color: #8FC2D5; border: none;"><div style="margin-left: 2rem;"><span class="sidetwitter-font"><img src="Element/Icon/ui_icon_twitter.png" alt="Official Twitter" class="sidetwitter-logo">OFFICIAL TWITTER</span></div><hr style="width: 90%; height: 1px; background-color: #8FC2D5; border: none;"></a>
             </div>
         </div>
-        <div id="share-container">
+        <div class="share-container">
             <div class="share-inner"><p class="share-text">SHARE</p></div>
             <div class="share-logo">
                 <img src="Element/Button/ui_button_sharefacebook.png" onclick="shareOnFacebook()" alt="Share on Facebook" class="share-facebook">
                 <img src="Element/Button/ui_button_sharetwitter.png" onclick="shareOnTwitter()" alt="Share on Twitter" class="share-twitter">
             </div>
         </div>
+    </div>
+    <div class="all-content">
+        <div id="topLeft" tabindex="0"></div>
         <div id="main-content">
             <div class="main-background"></div>
             <div class="main-container">
@@ -1651,17 +1653,17 @@
                     </div>
                 </div> <!-- Pixel-Character-Frame -->
                 <div class="logo-container"><img class="logo" src="Element/Icon/ui_icon_logo_top.png" alt="Logo"></div> <!-- Aibaverse-Logo -->
-                <div class="learnbar-container">
+                <div class="learnbar-container" onclick="about()">
                     <div class="learnbar-container-add">
                         <div class="learnbar" >
-                            <img src="Element/Icon/ui_icon_scrolldown.png" alt="Learn Bar Logo" class="learnbar-logo" onclick="about()">
+                            <img src="Element/Icon/ui_icon_scrolldown.png" alt="Learn Bar Logo" class="learnbar-logo">
                             <div class="learnbar-text">Learn more about us!</div>
                         </div>
                     </div>
                 </div> <!-- Learn-More-Bar -->
             </div>
         </div>
-        <div class="break"></div>
+        <!--<div class="break"></div>-->
         <div id="about-content">
             <div class="about-top-container" onclick="main()"><div class="about-top"><img src="Element/Button/ui_button_gototop.png" alt="Go To Top"><p class="about-top-text">TOP</p></div></div>
             <div><img src="Element/bg/ui_bg_featherpattern.png" alt="Feather BG" class="about-feather"></div>
@@ -1735,6 +1737,8 @@
                 </div>
             </div>
         </div>
+        <div id="roadmap-content">COMING SOON!</div>
+        <div id="team-content">COMING SOON!</div>
     </div>
 </body>
 </html>
