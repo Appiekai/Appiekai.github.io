@@ -34,6 +34,16 @@
     src: url(Font/TitilliumWeb-Bold.ttf);
 }
 
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+  }
+
 .all-content{
     margin: auto;
     padding-left: 15rem;
