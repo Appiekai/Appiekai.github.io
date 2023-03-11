@@ -36,15 +36,11 @@
 
 .all-content{
     margin: auto;
+    padding-left: 15rem;
+    width: fit-content;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 280px) { 
-    .all-content{
-        zoom: 22%;
-    }
-} /* Need more testing on resolution */
-
-@media screen and (max-width: 1920px) and (min-width: 1280px) { 
+@media screen and (max-width: 1920px) { 
     .all-content{
         zoom: 100%;
     }
@@ -54,19 +50,7 @@
     margin: auto;
 }
 
-@media screen and (max-width: 1279px) and (min-width: 280px) { 
-    .static-content{
-        zoom: 20%;
-    }
-} /* Need more testing on resolution */
-
-@media screen and (max-width: 1280px) and (min-width: 1280px) { 
-    .static-content{
-        zoom: 85%;
-    }
-} /* Need more testing on resolution */
-
-@media screen and (max-width: 1920px) and (min-width: 1281px) { 
+@media screen and (max-width: 1920px) { 
     .static-content{
         zoom: 100%;
     }
@@ -82,50 +66,49 @@ html{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-color: var(--Background-2);
+    background-color: black;
 }
 
 body{
     overflow-x: hidden;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 #main-content{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    padding-left: 5rem;
+    margin: auto;
 }
 
 .main-container{
+    position: relative;
+    overflow: hidden;
     height: 100vh;
-    width: 100%;
+    width: 104rem;
 }
 
 .main-background{
     position: absolute;
-    height: 100vh;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     background-color: var(--Background-1);
     z-index: -2;
 }
 
 #about-content{
+    margin: auto;
+}
+
+.about-container{
     position: relative;
-    padding-left: 5rem;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
+    background-color: var(--Background-2);
+    width: 104rem;
 }
 
 #roadmap-content{
     position: relative;
     height: 100rem;
-    width: 100%;
+    width: 104rem;
     background-color: antiquewhite;
     font-size: 8rem;
     text-align: right;
@@ -134,7 +117,7 @@ body{
 #team-content{
     position: relative;
     height: 100rem;
-    width: 100%;
+    width: 104rem;
     background-color: aliceblue;
     font-size: 8rem;
     text-align: right;
@@ -155,12 +138,6 @@ body{
     height: 100%;
 }
 
-@media screen and (max-width: 1600px) { 
-    .logo-container{
-        zoom: 80%;
-    }
-} /* Need more testing on resolution */
-
 .logo{
     position: relative;
     top: 45%;
@@ -179,12 +156,6 @@ body{
     filter: opacity(50%);
     z-index: -2;
 }
-
-@media screen and (max-width: 1600px) { 
-    .diamond-container{
-        zoom: 80%;
-    }
-} /* Need more testing on resolution */
 
 .diamond{
     width: 22rem;
@@ -213,12 +184,6 @@ body{
     z-index: 2;
 }
 
-@media screen and (max-width: 1600px) { 
-    .learnbar-container{
-        zoom: 85%;
-    }
-} /* Need more testing on resolution */
-
 .learnbar-container-add{
     position: absolute;
     bottom: 0;
@@ -231,7 +196,6 @@ body{
 .learnbar{
     text-align: center;
     margin-top: -3.5rem;
-    margin-left: -5rem;
 }
 
 .learnbar-logo{
@@ -271,12 +235,6 @@ body{
     z-index: 5;
     overflow: hidden;
 }
-
-@media screen and (max-width: 1600px) { 
-    .sidemenu-container{
-        zoom: 95%;
-    }
-} /* Need more testing on resolution */
 
 .sidemenu{
     float: left;
@@ -344,12 +302,6 @@ body{
     text-decoration: none;
 }
 
-@media screen and (max-width: 1600px) { 
-    .sidetext-font{
-        font-size: 190%;
-    }
-} /* Need more testing on resolution */
-
 .sidetwitter-container{
     text-decoration: none;
     position: absolute;
@@ -409,12 +361,6 @@ body{
     z-index: 20;
 }
 
-@media screen and (max-width: 1600px) { 
-    .share-container{
-        zoom: 85%;
-    }
-} /* Need more testing on resolution */
-
 .share-inner{
     display: flex;
     text-align: center;
@@ -466,17 +412,10 @@ body{
 
 .about-top-container{
     position: absolute;
-    margin-left: -2rem;
-    left: 50%;
+    left: 45.5%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
-@media screen and (max-width: 1600px) { 
-    .about-top-container{
-        zoom: 85%;
-    }
-} /* Need more testing on resolution */
 
 .about-top{
     position: absolute;
@@ -496,19 +435,13 @@ body{
 
 .about-feather{
     position: absolute;
-    width: 100%;
+    width: 104rem;
     height: auto;
 }
 
 .about-logo-container{
-    width: 100%;
+    margin: auto;
 }
-
-@media screen and (max-width: 1600px) { 
-    .about-logo-container{
-        zoom: 80%;
-    }
-} /* Need more testing on resolution */
 
 .about-logo{
     position: relative;
@@ -525,21 +458,12 @@ body{
     position: relative;
     top: 13rem;
     height: 28rem;
-    width: 118rem;
-    margin: auto;
+    width: 100%;
 }
-
-@media screen and (max-width: 1600px) { 
-    .about-info-container{
-        left: 0.5%;
-        zoom: 66%;
-    }
-} /* Need more testing on resolution */
 
 .about-info-text{
     position: relative;
-    left: 10rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
     width: 45rem;
     color: var(--Text-1);
 }
@@ -588,7 +512,7 @@ h3{
 
 .about-image-container{
     position: absolute;
-    right: 8rem;
+    right: 4rem;
     top: -2rem;
     background-color: white;
     width: 50rem;
@@ -672,21 +596,12 @@ h3{
 .about-break-container{
     height: 25rem;
     margin: auto;
-    width: 120rem;
 }
-
-@media screen and (max-width: 1600px) { 
-    .about-break-container{
-        zoom: 69%;
-    }
-} /* Need more testing on resolution */
 
 .about-break-content{
     position: absolute;
     margin-top: 18rem;
-    margin-left: 10rem;
     height: auto;
-    width: 104rem;
 }
 
 /* Small-Panel */
@@ -694,16 +609,9 @@ h3{
 .small-container{
     position: relative;
     margin-top: 22rem;
-    margin-left: 2rem;
     text-align: center;
     width: 100%;
 }
-
-@media screen and (max-width: 1600px) { 
-    .small-container{
-        zoom: 68%;
-    }
-} /* Need more testing on resolution */
 
 h4{
     position: absolute;
@@ -723,22 +631,14 @@ h4{
 
 .discord-container{
     position: relative;
-    width: 100rem;
     margin: auto;
     height: 58rem;
 }
 
-@media screen and (max-width: 1600px) { 
-    .discord-container{
-        left: 0.5%;
-        zoom: 66%;
-    }
-} /* Need more testing on resolution */
-
 .illus-container{
     position: absolute;
     margin-top: 10rem;
-    margin-left: 1.8rem;
+    left: 1rem;
 }
 
 .illus-position{
@@ -748,7 +648,7 @@ h4{
 .discord-text-container{
     position: absolute;
     margin-top: 8rem;
-    right: -2.1rem;
+    right: 2.5rem;
     width: 48.5rem;
     height: 38rem;
 }
@@ -792,23 +692,16 @@ h6{
 
 .decoration-container{
     margin: auto;
-    width: 99rem;
     text-align: center;
 }
 
-@media screen and (max-width: 1600px) { 
-    .decoration-container{
-        zoom: 68.5%;
-    }
-} /* Need more testing on resolution */
-
 .decoration-1{
-    width: 104rem;
+    margin: auto;
 }
 
 .decoration-2{
     margin-top: -6.7rem;
-    margin-left: 5.5rem;
+    margin-left: 2.5rem;
 }
 
 /* Decoration-Box */
@@ -819,19 +712,13 @@ h6{
     margin: auto;
 }
 
-@media screen and (max-width: 1600px) { 
-    .decoration-box-container{
-        left: 0.8%;
-        zoom: 66%;
-    }
-} /* Need more testing on resolution */
-
 .decoration-box{
     position: relative;
     display: inline-block;
     background-color: var(--Decoration-1);
     margin-top: 3rem;
-    margin-left: 8rem;
+    margin-left: 3.3rem;
+    margin-right: 4.8rem;
     width: 27rem;
     height: 40rem;
     box-shadow: -1rem 1rem 0px var(--Decoration-2);
@@ -894,16 +781,9 @@ h8{
     height: 55rem;
 }
 
-@media screen and (max-width: 1600px) { 
-    .invite-all{
-        zoom: 68%;
-    }
-} /* Need more testing on resolution */
-
 .invite-container{
     position: relative;
     top: 10rem;
-    left: 2.5rem;
     width: 104rem;
     height: 34.7rem;
     background-color: antiquewhite;
