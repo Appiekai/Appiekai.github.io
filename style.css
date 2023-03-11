@@ -111,7 +111,7 @@ body{
     width: 104rem;
     background-color: antiquewhite;
     font-size: 8rem;
-    text-align: right;
+    text-align: left;
 }
 
 #team-content{
@@ -120,7 +120,7 @@ body{
     width: 104rem;
     background-color: aliceblue;
     font-size: 8rem;
-    text-align: right;
+    text-align: left;
 }
 
 .break{
