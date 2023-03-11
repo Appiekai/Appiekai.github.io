@@ -3,6 +3,34 @@ window.onload = function() {
   document.getElementById("main-click").click();
 }
 
+var sectionEntered = {};
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  var sections = document.querySelectorAll('div');
+  
+  for (var i = 0; i < sections.length; i++) {
+    var section = sections[i];
+    var offsetTop = section.offsetTop;
+    
+    if (scrollTop >= offsetTop && scrollTop < offsetTop + section.offsetHeight && !sectionEntered[section.id]) {
+      console.log('You are in section ' + section.id);
+      
+      var sectionLink = document.querySelector('a[href="#' + section.id + '"]');
+      if (sectionLink && typeof sectionLink.onclick === 'function') {
+        sectionLink.onclick();
+      } else if (sectionLink) {
+        sectionLink.click();
+      }
+      
+      sectionEntered[section.id] = true;
+    } else if (scrollTop < offsetTop || scrollTop >= offsetTop + section.offsetHeight) {
+      sectionEntered[section.id] = false;
+    }
+  }
+});
+
 function main() {
   document.getElementById("main-click").click();
 }
