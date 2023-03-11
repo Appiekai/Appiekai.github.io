@@ -934,3 +934,10 @@ h9{
     color: var(--Text-1);
     z-index: 4;
 }
+
+/* Div-Scroll */
+
+.scrollable {
+    overflow: auto;
+    max-height: 200px; /* Set a maximum height for the scrollable area */
+  }
