@@ -118,7 +118,6 @@ body{
     overflow: hidden;
     background-color: var(--Background-2);
     width: 104rem;
-    z-index: -10;
 }
 
 #roadmap-content{
