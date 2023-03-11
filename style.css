@@ -42,7 +42,6 @@
 
 @media screen and (max-width: 1920px) { 
     .all-content{
-        zoom: 100%;
     }
 } /* Need more testing on resolution */
 
@@ -52,7 +51,6 @@
 
 @media screen and (max-width: 1920px) { 
     .static-content{
-        zoom: 100%;
     }
 } /* Need more testing on resolution */
 
@@ -73,7 +71,6 @@ body{
     overflow-x: hidden;
     margin: auto;
     padding: 0;
-    zoom: 100%;
 }
 
 #main-content{

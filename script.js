@@ -93,4 +93,3 @@ function highlightText(element) {
     current.classList.remove("sidetext-highlight");
   }
   element.classList.add("sidetext-highlight");
-}
