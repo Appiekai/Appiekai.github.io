@@ -19,14 +19,6 @@ function team() {
   document.getElementById("team-click").click();
 }
 
-function highlightText(element) {
-    var current = document.querySelector(".sidetext-highlight");
-    if (current) {
-      current.classList.remove("sidetext-highlight");
-    }
-    element.classList.add("sidetext-highlight");
-  }
-
 function shareOnTwitter() {
     var url = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(window.location.href);
     window.open(url, "_blank", "width=600,height=400");
@@ -93,4 +85,12 @@ function right() {
     rr.src = imageDir + images[3];
     cnt = 3
   }
+}
+
+function highlightText(element) {
+  var current = document.querySelector(".sidetext-highlight");
+  if (current) {
+    current.classList.remove("sidetext-highlight");
+  }
+  element.classList.add("sidetext-highlight");
 }

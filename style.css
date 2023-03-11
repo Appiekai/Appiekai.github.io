@@ -73,6 +73,7 @@ body{
     overflow-x: hidden;
     margin: auto;
     padding: 0;
+    zoom: 100%;
 }
 
 #main-content{
