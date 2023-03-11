@@ -50,21 +50,9 @@
     width: fit-content;
 }
 
-@media screen and (min-width: 320px) { 
-    .all-content{
-        zoom: 1;
-    }
-} /* Need more testing on resolution */
-
 .static-content{
     margin: auto;
 }
-
-@media screen and (min-width: 320px) { 
-    .static-content{
-        zoom: 1;
-    }
-} /* Need more testing on resolution */
 
 #top-left{
     position: absolute;
@@ -82,15 +70,63 @@ html{
 
 body{
     overflow-x: hidden;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1279px) {
     body {
       overflow-x: auto;
     }
   }
+
+@media screen and (min-width: 1280px) { 
+    body{
+        zoom: 67%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1366px) { 
+    body{
+        zoom: 72%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1440px) { 
+    body{
+        zoom: 75%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1536px) { 
+    body{
+        zoom: 80%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1600px) { 
+    body{
+        zoom: 83%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1920px) { 
+    body{
+        zoom: 100%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 3840px) { 
+    body{
+        zoom: 201%;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 4096px) { 
+    body{
+        zoom: 214%;
+    }
+} /* Need more testing on resolution */  
 
 #main-content{
     margin: auto;
@@ -102,6 +138,54 @@ body{
     height: 100vh;
     width: 104rem;
 }
+
+@media screen and (min-width: 1280px) { 
+    .main-container{
+        height: 150vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1366px) { 
+    .main-container{
+        height: 140vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1440px) { 
+    .main-container{
+        height: 134vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1536px) { 
+    .main-container{
+        height: 125vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1600px) { 
+    .main-container{
+        height: 121vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 1920px) { 
+    .main-container{
+        height: 100vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 3840px) { 
+    .main-container{
+        height: 50vh;
+    }
+} /* Need more testing on resolution */  
+
+@media screen and (min-width: 4096px) { 
+    .main-container{
+        height: 47vh;
+    }
+} /* Need more testing on resolution */ 
 
 .main-background{
     position: absolute;
@@ -321,9 +405,8 @@ body{
 
 .sidetwitter-container{
     text-decoration: none;
-    position: relative;
-    left: 1rem;
-    bottom: -12rem;
+    position: absolute;
+    bottom: 1.2rem;
     width: 100%;
     cursor: pointer;
 }
@@ -358,7 +441,6 @@ body{
   }
 
 .sidetwitter-font{
-    margin-left: -0.5rem;
     font-style: normal;
     font-family: 'Built-Titling-LT';
     font-size: 1.4rem;
