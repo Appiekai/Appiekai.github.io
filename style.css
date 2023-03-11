@@ -50,8 +50,9 @@
     width: fit-content;
 }
 
-@media screen and (max-width: 1920px) { 
+@media screen and (max-width: 1280px) { 
     .all-content{
+        zoom: 0%;
     }
 } /* Need more testing on resolution */
 
@@ -59,8 +60,9 @@
     margin: auto;
 }
 
-@media screen and (max-width: 1920px) { 
+@media screen and (max-width: 1280px) { 
     .static-content{
+        zoom: 0%;
     }
 } /* Need more testing on resolution */
 
